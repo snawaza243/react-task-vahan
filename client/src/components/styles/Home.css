@@ -1,0 +1,146 @@
+.entity-list {
+  width: fit-content;
+  min-width: 500px;
+  /* min-height: 500px; */
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+
+  /* 
+
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  */
+}
+
+.entity-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.logout-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+
+  color: #fff;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #931f2b;
+
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+  /* Prevent line breaks */
+  overflow: hidden;
+  /* Hide overflow content */
+  text-overflow: ellipsis;
+  /* Add ellipsis for overflow content */
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.delete-button {
+  background-color: #e51010;
+}
+
+.edit-button {
+  background-color: teal;
+}
+
+
+.delete-button:hover {
+  background-color: #881010;
+
+}
+
+
+
+.edit-button:hover {
+  background-color: rgb(10, 82, 82);
+}
+
+
+@media screen and (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-button {
+    margin: 10px 0;
+  }
+
+  .table-container {
+    overflow-x: auto;
+    width: 100%;
+  }
+}

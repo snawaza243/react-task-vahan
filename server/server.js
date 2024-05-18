@@ -24,7 +24,7 @@ const db = mysql.createConnection({
     database: process.env.DB_NAME
 });
 
-const secretKey = "sam123";
+const secretKey = process.env.SECRET_KEY;
 
 // Login route
 app.post('/login', (req, res) => {
